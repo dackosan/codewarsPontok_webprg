@@ -93,3 +93,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const users = loadUsers();
     users.forEach(renderUserCard);
 });
+
+function toggleDarkMode() {
+    const currentTheme = document.body.dataset.theme;
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    document.body.dataset.theme = newTheme;
+    saveTheme(newTheme);
+
+    // Update the icon based on the new theme
+    const iconElement = darkModeToggle.querySelector('i');
+    iconElement.textContent = newTheme === 'light' ? 'light_mode' : 'dark_mode';
+}

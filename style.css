@@ -13,16 +13,21 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: Arial, sans-serif;
+    font-family: 'Brush Script MT', cursive;
     margin: 0;
     padding: 20px;
 }
 
-header {
+header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
+}
+
+h1{
+    margin-left: 35%;
 }
 
 .form-container {
