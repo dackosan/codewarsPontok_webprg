@@ -102,7 +102,6 @@ function toggleDarkMode() {
     document.body.dataset.theme = newTheme;
     saveTheme(newTheme);
 
-    // Update the icon based on the new theme
     const iconElement = darkModeToggle.querySelector('i');
     iconElement.textContent = newTheme === 'light' ? 'light_mode' : 'dark_mode';
 }

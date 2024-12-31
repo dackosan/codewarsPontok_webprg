@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,14 @@
         <h1>Codewars User Dashboard</h1>
         <div id="headerButtons">
             <button class="dark-mode-toggle"><i class="material-icons"></i></button>
-            <button class="clear-data">Clear Data</button>
         </div>
     </header>
 
     <div class="form-container">
         <form id="user-form">
             <label for="username">Enter Codewars Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username">
+            <button type="submit" class="clear-data">Clear Data</button>
             <button type="submit">Add User</button>
         </form>
     </div>

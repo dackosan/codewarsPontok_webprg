@@ -2,12 +2,14 @@
     --bg-color: #ffffff;
     --text-color: #000000;
     --card-bg: #f9f9f9;
+    --form-bg: #f9f9f9;
 }
 
 [data-theme="dark"] {
     --bg-color: #1e1e1e;
     --text-color: #f9f9f9;
     --card-bg: #2e2e2e;
+    --form-bg: #2e2e2e;
 }
 
 body {
@@ -20,18 +22,55 @@ body {
 
 header{
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
+    position: relative;
 }
 
-h1{
-    margin-left: 35%;
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+#headerButtons{
+    margin-left: auto;
 }
 
 .form-container {
-    margin-bottom: 20px;
+    margin-bottom: 3%;
+    text-align: center;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+}
+
+#user-form{
+    background-color: var(--form-bg);
+    border: 1px solid var(--form-bg);
+    width: 230px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#user-form input{
+    width: 177px;
+    margin: 5px;
+}
+
+#user-form button{
+    width: 75.58px;
+    margin: 3px;
+}
+
+#user-form > button{
+    width: 83.72px;
 }
 
 .cards-container {
