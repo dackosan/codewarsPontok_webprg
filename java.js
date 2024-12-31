@@ -7,6 +7,8 @@ const clearDataButton = document.querySelector('.clear-data');
 function loadTheme() {
     const theme = localStorage.getItem('theme') || 'light';
     document.body.dataset.theme = theme;
+    const iconElement = darkModeToggle.querySelector('i');
+    iconElement.textContent = theme === 'light' ? 'light_mode' : 'dark_mode';
 }
 
 function saveTheme(theme) {
